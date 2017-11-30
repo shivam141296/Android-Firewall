@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Teal 500 -->
+    <color name="colorPrimary">#009688</color>
+    <!-- Teal 600-->
+    <color name="colorPrimaryDark">#00796B</color>
+    <!-- Deep orange A200 -->
+    <color name="colorAccent">#FF5722</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:netguard="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_search"
+        netguard:actionViewClass="android.support.v7.widget.SearchView"
+        netguard:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/menu_network"
+        android:title="@string/menu_network"
+        netguard:showAsAction="always" />
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh" />
+    <item
+        android:id="@+id/menu_whitelist_wifi"
+        android:checkable="true"
+        android:title="@string/menu_whitelist_wifi" />
+    <item
+        android:id="@+id/menu_whitelist_other"
+        android:checkable="true"
+        android:title="@string/menu_whitelist_other" />
+    <item
+        android:id="@+id/menu_reset_wifi"
+        android:title="@string/menu_reset_wifi" />
+    <item
+        android:id="@+id/menu_reset_other"
+        android:title="@string/menu_reset_other" />
+    <item
+        android:id="@+id/menu_dark"
+        android:checkable="true"
+        android:title="@string/menu_dark" />
+    <item
+        android:id="@+id/menu_vpn_settings"
+        android:title="@string/menu_vpn_settings" />
+    <item
+        android:id="@+id/menu_support"
+        android:title="@string/menu_support" />
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/menu_about" />
+</menu>
