@@ -1,5 +1,7 @@
 # NetGuard
 
+<img src="Logotype primary.png" width="60%" height="60%" />
+
 NetGuard is possibly the first free and open source no-root firewall for Android.
 
 <img src="screenshot.png" width="232" height="371" hspace="4"/>
