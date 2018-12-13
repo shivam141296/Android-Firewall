@@ -37,10 +37,10 @@ Frequently Asked Questions (FAQ)
 --------------------------------
 
 <a name="FAQ1"></a>
-**(1) Can NetGuard completely protect my privacy?**
+**(1) Can Android Firewall completely protect my privacy?**
 
 No - nothing can completely protect your privacy.
-NetGuard will do its best, but it is limited by the fact it must use the VPN service.
+ will do its best, but it is limited by the fact it must use the VPN service.
 This is the trade-off required to make a firewall which does not require root access.
 The firewall can only start when Android "allows" it to start,
 so it will not offer protection during early boot-up (although your network may not be loaded at that time).
@@ -52,19 +52,19 @@ and only enable them on reboot, after the firewall service has started (and the 
 Thanks @[pulser](https://github.com/pulser/)
 
 <a name="FAQ2"></a>
-**(2) Can I use VPN applications while using NetGuard?**
+**(2) Can I use VPN applications while using Android Firewall?**
 
 If the VPN application is using the [VPN service](http://developer.android.com/reference/android/net/VpnService.html),
-then no, because NetGuard needs to use this service, and Android allows only one application at a time to use this service.
+then no, because Android Firewall needs to use this service, and Android allows only one application at a time to use this service.
 
 <a name="FAQ3"></a>
-**(3) Can I use NetGuard on any Android version?**
+**(3) Can I use Android Firewall on any Android version?**
 
 No, because the method [addDisallowedApplication](http://developer.android.com/reference/android/net/VpnService.Builder.html#addDisallowedApplication(java.lang.String))
 is being used, the minimum required Android version is 5.0 (Lollipop).
 
 <a name="FAQ4"></a>
-**(4) Will NetGuard use extra battery power?**
+**(4) Will Android Firewall use extra battery power?**
 
 No, unlike most of the similar closed source alternatives.
 
@@ -75,7 +75,7 @@ Unfortunately this is not possible without using significant battery power
 and adding a lot of complex code to do network translation from OSI layer 3 to layer 4
 (and thus implementing a TCP/IP stack), which will inevitably introduce bugs as well.
 This is how most (all?) other no root firewalls work.
-NetGuard is unique, because it doesn't implement a TCP/IP stack and is therefore both highly efficient and simple.
+Android Firewall is unique, because it doesn't implement a TCP/IP stack and is therefore both highly efficient and simple.
 
 For more advanced use cases while not sacrificing battery usage, rooting and using a iptables based firewall,
 like [AFWall+](https://github.com/ukanth/afwall) might be a better option.
@@ -84,7 +84,7 @@ Support
 -------
 
 * Questions: please [use this XDA-Developers forum thread](http://forum.xda-developers.com/showthread.php?t=3233012)
-* Feature requests and bugs: please [report an issue on GitHub](https://github.com/M66B/NetGuard/issues/new)
+* Feature requests and bugs: please [report an issue on GitHub](https://github.com/shivam141296/Android-Firewall/issues)
 
 Please do not use GitHub for questions.
 
@@ -95,7 +95,8 @@ Translations:
 
 * Translations to other languages are welcomed
 * Check if the language [is supported by Android](http://stackoverflow.com/questions/7973023/what-is-the-list-of-supported-languages-locales-on-android) and find its locale
-* Copy [this file](https://github.com/M66B/NetGuard/blob/master/app/src/main/res/values/strings.xml) to the correct locale folder
+* Copy [this file](https://github.com/shivam141296/Android-Firewall/blob/master/app/src/main/res/values/strings.xml) to the correct locale folder
+
 * Translate the strings in the copied file and omit all lines with **translatable="false"**
 * Create a [pull request on GitHub](https://help.github.com/articles/using-pull-requests) for the new/updated translation
 
@@ -111,14 +112,14 @@ Copyright (c) 2015 Marcel Bokhorst ([M66B](http://forum.xda-developers.com/membe
 
 All rights reserved
 
-This file is part of NetGuard.
+This file is part of Android Firewall.
 
-NetGuard is free software: you can redistribute it and/or modify
+Android Firewall is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your discretion) any later version.
 
-NetGuard is distributed in the hope that it will be useful,
+Android Firewall is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
