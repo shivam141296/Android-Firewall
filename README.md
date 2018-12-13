@@ -1,4 +1,4 @@
-# NetGuard
+# Android Firewall
 
 <img src="Logotype primary.png" width="60%" height="60%" />
 
